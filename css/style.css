@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
 :root{--navy-blue-color:#2E2F42;
 --slate-color:#434455;
 --cloud-color:#F4F4FD;
@@ -9,10 +15,55 @@
     color: #434455;
     background-color: #FFFFFF;}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{margin-top: 0;
+margin-bottom: 0;}
+
+ol,ul{margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;}
+
+img{display: block;}
+
+button{cursor: pointer;}
+
 .list{list-style: none;}
+
 .link{text-decoration: none;}
 
-.logo{color:var(--iris-color);
+.container{ 
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;}
+
+.page-header-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */ }
+
+.page-nav{display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #E7E9FC;
+}
+
+.logo{margin-right: 76px;
+    
+    
+    color:var(--iris-color);
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -23,10 +74,17 @@
 .span:hover{color: #404bbf;}
 .span:focus{color: #404bbf;}
 
-.menu{color:var(--navy-blue-color);
+
+
+.menu{display: flex;
+    align-items: center;
+    padding-left: 0;
+    
+    
+    color:var(--navy-blue-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 16p;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration:none;
@@ -34,7 +92,21 @@
 .menu:hover{color: var(--iris-color);}
 .menu:focus{color: var(--iris-color);}
 
-.address-link{color: var(--slate-color);
+.menu-item:not(:last-child){
+    margin-right: 40px;
+}
+
+.address-list{display: flex;
+align-items: center;
+margin-left: auto;
+padding: left 0;
+
+}
+
+.address-link{
+
+    margin-left: 40px;
+    color: var(--slate-color);
     font-style: normal;
     font-family: 'Roboto';
     font-weight: 400;
@@ -44,7 +116,18 @@
 .address-link:hover{color: var(--iris-color);}
 .address-link:focus{color: var(--iris-color);}
 
+/* HERO */
+.container-hero{width: 1158px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
 .hero{background-color: var(--navy-blue-color);}
+
 
 .hero-title {color:var(--white-color);
     font-size: 56px;
@@ -63,7 +146,28 @@
 .btn:hover{background-color: #404BBF ;}
 .btn:focus{background-color: #404BBF ;}
 
-.title {color: var(--navy-blue-color);
+.hero-btn{
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 10px;
+    position: absolute;
+    background: #4D5AE5;}
+
+.section-two{background: #E5E5E5;
+padding-top: 120px;
+padding-bottom: 120px;}
+
+.title{margin-bottom: 8px;
+    color:var(--navy-blue-color);
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -77,14 +181,22 @@
     letter-spacing: 0.02em;
     font-size: 16px;}
 
-.basic{color: var(--navy-blue-color);
+.section-three{background: #E5E5E5;
+padding-top: 120px;
+padding-bottom: 120px;}
+
+.basic{margin-bottom: 72px;
+    color: var(--navy-blue-color);
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 0.02em;
-    background-color: #F4F4FD;
-}
+    letter-spacing: 0.02em;}
+
+.section-team{background: #F4F4FD;
+padding-top: 120px;
+padding-bottom: 120px;}
+
 .team-card{background-color: var(--white-color);}
 
 .footer{background-color: var(--navy-blue-color);}
@@ -105,7 +217,10 @@
     letter-spacing: 0.02em;
     color:var(--cloud-color)}
 
-    .btn-portfolio {color:var(--accent-color);
+    .btn-portfolio {
+        align-self: center;
+        margin-left: 24px;
+        color:var(--accent-color);
         background-color: var(--footer-color);
         font-family: "Roboto", sans-serif;
         font-size: 16px;
@@ -119,3 +234,4 @@
     background-color: #404BBF;}
 .btn-portfolio:focus{color: #FFFFFF;
     background-color: #404BBF;}
+

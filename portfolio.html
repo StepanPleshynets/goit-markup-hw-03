@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body class="body" >
     <!-- хедер -->
-    <header>
-        <nav class="list">
+    <header class="page-header">
+        <nav class="container page-header-container">
             <a href="./index.html" class="link logo " >Web<span class="span">Studio</span></a>
-    <ul class="list">
-        <li><a href="./index.html" class="link menu">Studio</a></li>
-        <li><a href="./portfolio.html" class="link menu">Portfolio</a></li>
-        <li><a href="" class="link menu">Contacts</a></li>
+    <ul class="menu list">
+        <li class="menu-item"><a href="./index.html" class="link menu">Studio</a></li>
+        <li class="menu-item"><a href="./portfolio.html" class="link menu">Portfolio</a></li>
+        <li class="menu-item"><a href="" class="link menu">Contacts</a></li>
     </ul>  
-        </nav>
+        
         <address class="address">
-            <ul class="list">
+            <ul class="address-list list">
                 <li><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
-                <li> <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a></li>
+                <li><a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a></li>
                 
             </ul>
         </address>
+    </nav>
     </header>
     
     <main>
         <section>
     <!-- filters -->
     <h1 hidden>section-1</h1>
-    <ul class="list">
+    <ul class="page-header-container list">
         <li><button type="button" class="btn-portfolio">All</button></li>
         <li><button type="button" class="btn-portfolio">Web Site</button></li>
         <li><button type="button" class="btn-portfolio">App</button></li>
