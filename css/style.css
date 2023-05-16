@@ -252,7 +252,7 @@ padding: 100px 0;}
     .btn-portfolio {
         border-radius: 4px;
         border: 1px solid var(--border-color);
-        padding: 12px 24 px 12px;
+        padding: 12px 24px 12px;
         align-self: center;
         margin-left: 24px;
         color:var(--accent-color);
@@ -284,6 +284,8 @@ padding: 100px 0;}
     padding-bottom: 12px;
 }
 
+.hidden{margin-bottom: 8px;}
+
 .main-portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -292,7 +294,7 @@ padding: 100px 0;}
 }
 
 .item-portfolio{
-    width: calc((100% - 48px) / 3);
+    width: calc((1158 - 48px) / 3);
 
 }
 
@@ -301,5 +303,5 @@ padding: 100px 0;}
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
-    
+
 }
