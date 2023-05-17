@@ -191,8 +191,7 @@ padding-bottom: 120px;}
 }
 
 .page-nav-item{display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 24px;
 }
 .item{flex-basis: calc((100% - 72px) / 4)}
 
